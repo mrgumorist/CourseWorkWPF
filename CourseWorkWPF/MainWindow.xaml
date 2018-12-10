@@ -5,8 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CourseWorkWPF"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Logginning Page" Height="333.692" Width="319.538" ResizeMode="NoResize" Background="Black">
     <Grid>
-        
+        <Label x:Name="label" Content="Login:" FontSize="30" Foreground="DeepSkyBlue" HorizontalAlignment="Left" Margin="105,36,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label_Copy" Content="Pass:" FontSize="30" Foreground="DeepSkyBlue" HorizontalAlignment="Left" Margin="105,119,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="textBox" HorizontalAlignment="Left"  Height="23" Margin="38,91,0,0" TextWrapping="Wrap" Background="Black" VerticalAlignment="Top" Width="222" />
+        <TextBox x:Name="textBox_Copy" HorizontalAlignment="Left"  Height="23" Margin="38,174,0,0" TextWrapping="Wrap" Background="Black" VerticalAlignment="Top" Width="222" />
+
     </Grid>
 </Window>
