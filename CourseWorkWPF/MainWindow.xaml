@@ -5,12 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CourseWorkWPF"
         mc:Ignorable="d"
-        Title="Logginning Page" Height="333.692" Width="319.538" ResizeMode="NoResize" Background="Black">
+        Title="Logginning Page" Height="366.018" Width="319.538" ResizeMode="NoResize" Background="Black" Closing="Window_Closing">
     <Grid>
         <Label x:Name="label" Content="Login:" FontSize="30" Foreground="DeepSkyBlue" HorizontalAlignment="Left" Margin="105,36,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="label_Copy" Content="Pass:" FontSize="30" Foreground="DeepSkyBlue" HorizontalAlignment="Left" Margin="105,119,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="textBox" HorizontalAlignment="Left"  Height="23" Margin="38,91,0,0" TextWrapping="Wrap" Background="Black" VerticalAlignment="Top" Width="222" />
-        <TextBox x:Name="textBox_Copy" HorizontalAlignment="Left"  Height="23" Margin="38,174,0,0" TextWrapping="Wrap" Background="Black" VerticalAlignment="Top" Width="222" />
+        <Label x:Name="label_Copy" Content="Password:" FontSize="30" Foreground="DeepSkyBlue" HorizontalAlignment="Left" Margin="79,119,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="Login" HorizontalAlignment="Left"  Height="23" Margin="38,91,0,0" Foreground="DeepSkyBlue" FontSize="15" Background="Black" VerticalAlignment="Top" Width="222" />
+        <PasswordBox x:Name="Pass" HorizontalAlignment="Left"  Height="23" Margin="38,174,0,0" Foreground="DeepSkyBlue" FontSize="15" Background="Black" VerticalAlignment="Top" Width="222" />
+        <Button x:Name="button" Content="Login" FontSize="20" FontWeight="Bold" Foreground="Black" Background="DeepSkyBlue" HorizontalAlignment="Left" Margin="38,225,0,0" VerticalAlignment="Top" Width="222" Height="36" Click="Button_Click"/>
+        <Button x:Name="button_Copy" Content="Register" FontSize="20" FontWeight="Bold" Foreground="Black" Background="DeepSkyBlue" HorizontalAlignment="Left" Margin="38,277,0,0" VerticalAlignment="Top" Width="222" Height="36" Click="Button_Copy_Click"/>
 
     </Grid>
 </Window>
