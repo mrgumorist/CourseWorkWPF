@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CourseWorkWPF"
         mc:Ignorable="d"
-        Title="AdminPanel" Height="450" Width="548.281">
+        Title="AdminPanel" Height="450" Width="548.281" WindowStartupLocation="CenterScreen">
     <Grid Background="Black">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="88.8"/>

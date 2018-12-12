@@ -15,23 +15,23 @@ using System.Windows.Shapes;
 namespace CourseWorkWPF
 {
     /// <summary>
-    /// Interaction logic for Client.xaml
+    /// Interaction logic for Phones.xaml
     /// </summary>
-    public partial class Client : Window
+    public partial class Phones : Window
     {
-        public Client()
+
+        public Phones()
         {
             InitializeComponent();
         }
-        //onlu in this page
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            Hide();
-            Phones phones = new Phones();
-            phones.ShowDialog();
-            this.Close();
-        }
 
+        //private void Button_Click(object sender, RoutedEventArgs e)
+        //{
+        //    Hide();
+        //    NoutBooks phones = new NoutBooks();
+        //    phones.ShowDialog();
+        //    this.Close();
+        //}
         private void Golovna(object sender, RoutedEventArgs e)
         {
             Hide();
@@ -56,7 +56,7 @@ namespace CourseWorkWPF
             this.Close();
         }
 
-        private void Button_Click_1(object sender, RoutedEventArgs e)
+        private void Clava(object sender, RoutedEventArgs e)
         {
             Hide();
             Claviatures phones = new Claviatures();
@@ -64,7 +64,7 @@ namespace CourseWorkWPF
             this.Close();
         }
 
-        private void Button_Click_2(object sender, RoutedEventArgs e)
+        private void Bukett(object sender, RoutedEventArgs e)
         {
 
             Hide();
@@ -80,5 +80,12 @@ namespace CourseWorkWPF
             phones.ShowDialog();
             this.Close();
         }
+    }
+    public class Product
+    {
+        public int Price { get; set; }
+        public string Name { get; set; }
+        public string Version { get; set; }
+        public string Photo { get; set; }
     }
 }

@@ -15,23 +15,14 @@ using System.Windows.Shapes;
 namespace CourseWorkWPF
 {
     /// <summary>
-    /// Interaction logic for Client.xaml
+    /// Interaction logic for Buket.xaml
     /// </summary>
-    public partial class Client : Window
+    public partial class Buket : Window
     {
-        public Client()
+        public Buket()
         {
             InitializeComponent();
         }
-        //onlu in this page
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            Hide();
-            Phones phones = new Phones();
-            phones.ShowDialog();
-            this.Close();
-        }
-
         private void Golovna(object sender, RoutedEventArgs e)
         {
             Hide();
@@ -48,7 +39,7 @@ namespace CourseWorkWPF
             this.Close();
         }
 
-        private void Mouses(object sender, RoutedEventArgs e)
+        private void Mousses(object sender, RoutedEventArgs e)
         {
             Hide();
             Mouses phones = new Mouses();
@@ -56,7 +47,7 @@ namespace CourseWorkWPF
             this.Close();
         }
 
-        private void Button_Click_1(object sender, RoutedEventArgs e)
+        private void Clava(object sender, RoutedEventArgs e)
         {
             Hide();
             Claviatures phones = new Claviatures();
@@ -64,7 +55,7 @@ namespace CourseWorkWPF
             this.Close();
         }
 
-        private void Button_Click_2(object sender, RoutedEventArgs e)
+        private void Bukett(object sender, RoutedEventArgs e)
         {
 
             Hide();
