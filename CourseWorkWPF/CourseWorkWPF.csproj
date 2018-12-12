@@ -157,5 +157,33 @@
   <ItemGroup>
     <Resource Include="Golovna.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Res\Noteed\0.png" />
+    <Resource Include="Res\Noteed\1.png" />
+    <Resource Include="Res\Noteed\2.png" />
+    <Resource Include="Res\Noteed\3.png" />
+    <Resource Include="Res\Noteed\4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Res\Phones\0.jpg" />
+    <Resource Include="Res\Phones\1.jpg" />
+    <Resource Include="Res\Phones\2.jpg" />
+    <Resource Include="Res\Phones\3.jpg" />
+    <Resource Include="Res\Phones\4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Res\Clavass\0.png" />
+    <Resource Include="Res\Clavass\1.png" />
+    <Resource Include="Res\Clavass\2.png" />
+    <Resource Include="Res\Clavass\3.png" />
+    <Resource Include="Res\Clavass\4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Res\Mousses\0.png" />
+    <Resource Include="Res\Mousses\1.png" />
+    <Resource Include="Res\Mousses\2.png" />
+    <Resource Include="Res\Mousses\3.png" />
+    <Resource Include="Res\Mousses\4.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

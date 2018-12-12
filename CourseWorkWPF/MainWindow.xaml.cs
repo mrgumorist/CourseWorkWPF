@@ -54,7 +54,7 @@ namespace CourseWorkWPF
                             else if (item.Range == "Client")
                             {
                                 Hide();
-                                Client client = new Client();
+                                Client client = new Client(item);
                                 client.ShowDialog();
                                 Show();
 

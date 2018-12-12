@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CourseWorkWPF"
         mc:Ignorable="d"
-        Title="Phones" Height="450" Width="800" WindowStartupLocation="CenterScreen">
+        Title="Phones" Height="450" Width="800" WindowStartupLocation="CenterScreen" Loaded="Window_Loaded">
     <Grid Background="Black">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="160"/>
@@ -44,15 +44,30 @@
             
         </Grid>
         <Grid Grid.Column="1">
-            <ListView Grid.Row="1"  Background="Beige"  Name="Display" >
+            <ListView Grid.Row="1"  Background="Beige"  Name="Display"  >
                 <ListView.View>
-                    <GridView>
-                        <GridViewColumn Header="Name" Width="200" DisplayMemberBinding="{Binding Name}" />
-                        <GridViewColumn Header="Version" Width="190" DisplayMemberBinding="{Binding Versi}" />
-                        <GridViewColumn Header="Price (in $)" Width="200" DisplayMemberBinding="{Binding Price}" />
+                   
+                    <GridView >
+
+                        <GridViewColumn Header="Name" Width="200" DisplayMemberBinding="{Binding Name}" >
+                        </GridViewColumn>
+                        <GridViewColumn Header="Version" Width="100" DisplayMemberBinding="{Binding Versio}" />
+                        <GridViewColumn Header="Price (in $)" Width="100" DisplayMemberBinding="{Binding Price}" />
+                        <GridViewColumn Width="200" Header="Image">
+                            <GridViewColumn.CellTemplate>
+                                <DataTemplate>
+
+                                        <Image Source="{Binding Photo}" Height="50"/>
+                                        
+                                   
+                                </DataTemplate>
+                            </GridViewColumn.CellTemplate>
+                        </GridViewColumn>
+                        
                     </GridView>
                 </ListView.View>
             </ListView>
+            
         </Grid>
 
     </Grid>

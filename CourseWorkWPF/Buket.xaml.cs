@@ -19,14 +19,16 @@ namespace CourseWorkWPF
     /// </summary>
     public partial class Buket : Window
     {
-        public Buket()
+        private User user;
+        public Buket(User user)
         {
+            this.user = user;
             InitializeComponent();
         }
         private void Golovna(object sender, RoutedEventArgs e)
         {
             Hide();
-            Client phones = new Client();
+            Client phones = new Client(user);
             phones.ShowDialog();
             this.Close();
         }
@@ -34,7 +36,7 @@ namespace CourseWorkWPF
         private void Notebooks(object sender, RoutedEventArgs e)
         {
             Hide();
-            NoutBooks phones = new NoutBooks();
+            NoutBooks phones = new NoutBooks(user);
             phones.ShowDialog();
             this.Close();
         }
@@ -42,7 +44,7 @@ namespace CourseWorkWPF
         private void Mousses(object sender, RoutedEventArgs e)
         {
             Hide();
-            Mouses phones = new Mouses();
+            Mouses phones = new Mouses(user);
             phones.ShowDialog();
             this.Close();
         }
@@ -50,7 +52,7 @@ namespace CourseWorkWPF
         private void Clava(object sender, RoutedEventArgs e)
         {
             Hide();
-            Claviatures phones = new Claviatures();
+            Claviatures phones = new Claviatures(user);
             phones.ShowDialog();
             this.Close();
         }
@@ -59,7 +61,7 @@ namespace CourseWorkWPF
         {
 
             Hide();
-            Buket phones = new Buket();
+            Buket phones = new Buket(user);
             phones.ShowDialog();
             this.Close();
         }
@@ -67,7 +69,7 @@ namespace CourseWorkWPF
         private void Phone(object sender, RoutedEventArgs e)
         {
             Hide();
-            Phones phones = new Phones();
+            Phones phones = new Phones(user);
             phones.ShowDialog();
             this.Close();
         }
