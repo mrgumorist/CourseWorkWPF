@@ -41,7 +41,7 @@
 
         </Grid>
         <Grid Grid.Column="1">
-            <ListView Grid.Row="1"  Background="Beige"  Name="Display"  >
+            <ListView Grid.Row="1"  Background="Beige"  Name="Display" SelectionChanged="Display_SelectionChanged" >
                 <ListView.View>
 
                     <GridView >

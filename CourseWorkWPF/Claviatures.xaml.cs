@@ -21,6 +21,20 @@ namespace CourseWorkWPF
     public partial class Claviatures : Window
     {
         User user;
+
+        ObservableCollection<Product> products = new ObservableCollection<Product>()
+            {
+            new Product() {Price =100, Name="MSi", Versio="1.0" },
+
+            new Product() {Price =110, Name="MSi", Versio="2.0" },
+
+             new Product() {Price =120, Name="MSi", Versio="3.0" },
+
+             new Product() {Price =130, Name="MSi", Versio="3.1" },
+
+             new Product() {Price =200, Name="MSi", Versio="4.0" }
+
+             };
         public Claviatures(User user)
         {
             this.user = user;
@@ -77,19 +91,6 @@ namespace CourseWorkWPF
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            ObservableCollection<Product> products = new ObservableCollection<Product>()
-            {
-            new Product() {Price =100, Name="MSi", Versio="1.0" },
-
-            new Product() {Price =110, Name="MSi", Versio="2.0" },
-
-             new Product() {Price =120, Name="MSi", Versio="3.0" },
-
-             new Product() {Price =130, Name="MSi", Versio="3.1" },
-
-             new Product() {Price =200, Name="MSi", Versio="4.0" }
-
-             };
             int i = 0;
             foreach (var item in products)
             {
@@ -97,6 +98,16 @@ namespace CourseWorkWPF
                 i++;
             }
             Display.ItemsSource = products;
+        }
+
+        private void Display_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            for (int i = 0; i < products.Count(); i++)
+                if (Display.SelectedItem == products[i])
+                {
+                    user.productss.Add(products[i]);
+                    MessageBox.Show("Succesfull added in your baket");
+                }
         }
     }
 }

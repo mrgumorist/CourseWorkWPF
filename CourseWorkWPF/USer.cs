@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -18,6 +19,9 @@ namespace CourseWorkWPF
         public string Range { get; set; }
         public bool IsBanned { get; set; }
         public bool IsAccepted { get; set; }
+        public ObservableCollection<Product> productss = new ObservableCollection<Product>();
+        public ObservableCollection<Product> productssDelivered = new ObservableCollection<Product>();
+        public  int DeliverStatus = 0;
         public User()
         {
 

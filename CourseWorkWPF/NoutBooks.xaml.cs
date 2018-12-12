@@ -21,6 +21,19 @@ namespace CourseWorkWPF
     public partial class NoutBooks : Window
     {
         User user;
+        ObservableCollection<Product> products = new ObservableCollection<Product>()
+            {
+            new Product() {Price =1020, Name="Lenovo", Versio="Z3" },
+
+            new Product() {Price =1130, Name="Lenovo", Versio="R5" },
+
+             new Product() {Price =1520, Name="Lenovo", Versio="R3" },
+
+             new Product() {Price =1430, Name="Lenovo", Versio="G6" },
+
+             new Product() {Price =2500, Name="Lenovo", Versio="A1" }
+
+             };
         public NoutBooks(User user)
         {
             this.user = user;
@@ -77,19 +90,7 @@ namespace CourseWorkWPF
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            ObservableCollection<Product> products = new ObservableCollection<Product>()
-            {
-            new Product() {Price =1020, Name="Lenovo", Versio="Z3" },
-
-            new Product() {Price =1130, Name="Lenovo", Versio="R5" },
-
-             new Product() {Price =1520, Name="Lenovo", Versio="R3" },
-
-             new Product() {Price =1430, Name="Lenovo", Versio="G6" },
-
-             new Product() {Price =2500, Name="Lenovo", Versio="A1" }
-
-             };
+            
             int i = 0;
             foreach (var item in products)
             {
@@ -97,6 +98,16 @@ namespace CourseWorkWPF
                 i++;
             }
             Display.ItemsSource = products;
+        }
+
+        private void Display_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            for (int i = 0; i < products.Count(); i++)
+                if (Display.SelectedItem == products[i])
+                {
+                    user.productss.Add(products[i]);
+                    MessageBox.Show("Succesfull added in your baket");
+                }
         }
     }
 }
