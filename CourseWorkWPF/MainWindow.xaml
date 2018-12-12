@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:CourseWorkWPF"
         mc:Ignorable="d"
         Title="Logginning Page" Height="366.018" Width="319.538" ResizeMode="NoResize" Background="Black" Closing="Window_Closing">
-    <Grid>
+    <Grid Loaded="Grid_Loaded">
         <Label x:Name="label" Content="Login:" FontSize="30" Foreground="DeepSkyBlue" HorizontalAlignment="Left" Margin="105,36,0,0" VerticalAlignment="Top"/>
         <Label x:Name="label_Copy" Content="Password:" FontSize="30" Foreground="DeepSkyBlue" HorizontalAlignment="Left" Margin="79,119,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="Login" HorizontalAlignment="Left"  Height="23" Margin="38,91,0,0" Foreground="DeepSkyBlue" FontSize="15" Background="Black" VerticalAlignment="Top" Width="222" />

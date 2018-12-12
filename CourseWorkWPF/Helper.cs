@@ -30,6 +30,7 @@ namespace CourseWorkWPF
         }
         public static void Deserialize()
         {
+           
             try
             {
               
@@ -42,6 +43,12 @@ namespace CourseWorkWPF
             {
              
             }
+            //User user = new User();
+            //user.IsAccepted = true;
+            //user.Login = "Admin";
+            //user.Password = "Admin";
+            //user.IsBanned = false;
+            //users.Add(user);
 
 
         }

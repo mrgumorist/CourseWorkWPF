@@ -26,10 +26,11 @@ namespace CourseWorkWPF
         }
         private bool notexit(string login)
         {
-        
-            if(Helper.users !=null)
+            List<User> list = new List<User>();
+            list.AddRange(Helper.users);
+            if(list.Count !=0)
             {
-                foreach (var item in Helper.users)
+                foreach (var item in list)
                 {
                     if(login==item.Login)
                     {
@@ -59,7 +60,14 @@ namespace CourseWorkWPF
                                 if(Fukk.SelectedDate!=null)
                                 {
                                     User user = new User();
-                                    user.IsAccepted = false;
+                                   if (comboBox.Text!= "Client")
+                                   {
+                                        user.IsAccepted = false;
+                                   }
+                                   else
+                                   {
+                                        user.IsAccepted = true;
+                                    }
                                     user.IsBanned = false;
                                     user.dateOfBith= Fukk.SelectedDate.Value;
                                     user.Range = comboBox.Text;

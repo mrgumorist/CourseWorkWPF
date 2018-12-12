@@ -28,15 +28,17 @@ namespace CourseWorkWPF
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             //todo logginning
+            bool found = false;
             foreach (var item in Helper.users)
             {
-                
                 if(item.Login==Login.Text&&item.Password==Pass.Password)
                 {
+                    found = true;
                     if(item.IsBanned==false)
                     {
                         if(item.IsAccepted==true)
                         {
+                                
                             if(item.Range== "Deliver")
                             {
 
@@ -49,27 +51,39 @@ namespace CourseWorkWPF
                             {
 
                             }
-                            else if (item.Range == "Cook")
+                            else if (item.Range == "Client")
                             {
+                                Hide();
+                                Client client = new Client();
+                                client.ShowDialog();
+                                Show();
 
                             }
+                            break;
                         }
                         else
                         {
                             MessageBox.Show("Your request in procces! Menejers will look it");
+                            break;
                         }
                     }
                     else
                     {
                         MessageBox.Show("YOU ARE BANNED");
+                        break;
                     }
                 }
                 else
                 {
-                    MessageBox.Show("Incorect login or password");
-
-                }
+                    found = false;
+                }                   
             }
+            if(found==false)
+            {
+                MessageBox.Show("Account not found");
+            }
+            Login.Text = null;
+            Pass.Password = null;
         }
 
         private void Button_Copy_Click(object sender, RoutedEventArgs e)
@@ -83,6 +97,11 @@ namespace CourseWorkWPF
         }
 
         private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            Helper.Serialize();
+        }
+
+        private void Grid_Loaded(object sender, RoutedEventArgs e)
         {
             Helper.Deserialize();
         }

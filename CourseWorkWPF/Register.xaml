@@ -15,9 +15,9 @@
         <Label x:Name="label_Copy2" Content="Range:" FontSize="30" Foreground="DeepSkyBlue" HorizontalAlignment="Left" Margin="50,358,0,0" VerticalAlignment="Top"/>
         <Button x:Name="button" Content="Register" FontSize="25" FontWeight="Bold" Foreground="Black" Background="DeepSkyBlue" HorizontalAlignment="Left" Margin="50,427,0,0" VerticalAlignment="Top" Width="304" Height="60" Click="Button_Click" />
         <ComboBox x:Name="comboBox" HorizontalAlignment="Left" Margin="226,364,0,0" VerticalAlignment="Top" Width="128" Height="31" FontSize="18" RenderTransformOrigin="0.503,1.815">
-            <Button BorderBrush="#FF913A3A" Background="Black" Content="Cook" Foreground="White" FontWeight="Bold" FontSize="18" Width="118"/>
-            <Button Background="Black" Content="Deliver" Foreground="White" FontWeight="Bold" FontSize="18" Width="118"/>
-            <Button Background="Black" Content="Manager" Foreground="White" FontWeight="Bold" FontSize="18" Width="118"/>
+            <Label BorderBrush="#FF913A3A" Background="Black" Content="Client" Foreground="White" FontWeight="Bold" FontSize="18" Width="118"/>
+            <Label Background="Black" Content="Deliver" Foreground="White" FontWeight="Bold" FontSize="18" Width="118"/>
+            <Label Background="Black" Content="Manager" Foreground="White" FontWeight="Bold" FontSize="18" Width="118"/>
         </ComboBox>
         <PasswordBox x:Name="Password" HorizontalAlignment="Left"  Height="36" Margin="156,163,0,0" Foreground="DeepSkyBlue" FontSize="21" Background="Black" VerticalAlignment="Top" Width="198" />
         <TextBox x:Name="Login" HorizontalAlignment="Left"  Height="36" Margin="156,108,0,0" Foreground="DeepSkyBlue" FontSize="21" Background="Black" VerticalAlignment="Top" Width="198" />
