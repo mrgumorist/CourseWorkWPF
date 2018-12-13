@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CourseWorkWPF"
         mc:Ignorable="d"
-        Title="Register" Height="538.595" Width="411.874" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+        Title="Register" Height="538.595" Width="411.874" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Icon="ICON.ico">
     <Grid Background="Black" Margin="0,0,-0.4,-4.8">
         <Label x:Name="label" Content="Login:" FontSize="30" Foreground="DeepSkyBlue" HorizontalAlignment="Left" Margin="50,94,0,0" VerticalAlignment="Top"/>
         <Label x:Name="label1" Content="Enter please your info:" FontSize="30" Foreground="DeepSkyBlue" HorizontalAlignment="Left" Margin="50,22,0,0" VerticalAlignment="Top"/>

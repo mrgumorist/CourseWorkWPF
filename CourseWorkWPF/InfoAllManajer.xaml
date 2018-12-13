@@ -5,13 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CourseWorkWPF"
         mc:Ignorable="d"
-        Title="InfoAllManajer" Height="450" Width="900" WindowStartupLocation="CenterScreen" Background="Black" Loaded="Window_Loaded">
+        Title="InfoAllManajer" Height="450" Width="900" WindowStartupLocation="CenterScreen" Background="Black" Loaded="Window_Loaded" Icon="ICON.ico">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="3*"/>
             <ColumnDefinition Width="10*"/>
         </Grid.ColumnDefinitions>
-        <DataGrid Grid.Column="1" Name="GGG" AutoGenerateColumns="False" IsReadOnly="True">
+        <DataGrid Grid.Column="1" Name="GGG" AutoGenerateColumns="False" IsReadOnly="True" >
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Name" Binding="{Binding Path=Name}" Width="200"></DataGridTextColumn>
                 <DataGridTextColumn Header="Surname" Binding="{Binding Path=Surname}" Width="200"></DataGridTextColumn>

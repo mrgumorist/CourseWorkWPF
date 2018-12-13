@@ -56,7 +56,10 @@ namespace CourseWorkWPF
                         
                             else if (item.Range == "Admin")
                             {
-
+                                Hide();
+                                AdminPanel menejer = new AdminPanel();
+                                menejer.ShowDialog();
+                                Show();
                             }
                             else if (item.Range == "Client")
                             {
@@ -66,6 +69,7 @@ namespace CourseWorkWPF
                                 Show();
 
                             }
+                            item.LastLogin = DateTime.Now;
                             break;
                         }
                         else

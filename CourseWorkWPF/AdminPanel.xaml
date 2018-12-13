@@ -5,14 +5,46 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CourseWorkWPF"
         mc:Ignorable="d"
-        Title="AdminPanel" Height="450" Width="800" WindowStartupLocation="CenterScreen">
+        Title="AdminPanel" Height="450" Width="800" WindowStartupLocation="CenterScreen" Loaded="Window_Loaded" Icon="ICON.ico">
     <Grid Background="Black">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="203.2"/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
         <Grid Background="Red">
-            
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Label Foreground="White" VerticalAlignment="Center" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="30" FontWeight="ExtraBold">NAME</Label>
+            <TextBox Name="Text1" Grid.Row="1" Margin="10" ></TextBox>
+            <Label Grid.Row="2" Foreground="White" VerticalAlignment="Center" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="30" FontWeight="ExtraBold">LOGIN</Label>
+            <TextBox Name="Text2" Grid.Row="3" Margin="10" ></TextBox>
+            <Label Grid.Row="4" Foreground="White" VerticalAlignment="Center" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="30" FontWeight="ExtraBold">Password</Label>
+            <TextBox Name="Text3" Grid.Row="5" Margin="10" ></TextBox>
+            <Button Grid.Row="6" Margin="5" Background="White" Foreground="Red" FontSize="20" FontWeight="Bold" Click="Create">Create</Button>
+            <Button Grid.Row="7" Margin="5" Background="White" Foreground="Red" FontSize="20" FontWeight="Bold" Click="Button_Click">Delete</Button>
+            <Button Grid.Row="8" Margin="5" Background="White" Foreground="Red" FontSize="20" FontWeight="Bold">Change</Button>
+            <Button Grid.Row="9" Margin="5" Background="White" Foreground="Red" FontSize="20" FontWeight="Bold">Ban</Button>
         </Grid>
+        <DataGrid Grid.Column="1" Name="Nonff" AutoGenerateColumns="False" >
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Name" Width="100" Binding="{Binding Path=Name}" ></DataGridTextColumn>
+                <DataGridTextColumn Header="Surname" Binding="{Binding Path=Surname}" Width="100" ></DataGridTextColumn>
+                <DataGridTextColumn Header="Login" Binding="{Binding Path=Login}" Width="100" ></DataGridTextColumn>
+                <DataGridTextColumn Header="Password" Binding="{Binding Path=Password}" Width="100"></DataGridTextColumn>
+                <DataGridCheckBoxColumn Header="IsAccepted" Binding="{Binding Path=IsAccepted}"></DataGridCheckBoxColumn>
+                <DataGridCheckBoxColumn Header="IsBanned" Binding="{Binding Path=IsBanned}"></DataGridCheckBoxColumn>
+             
+            </DataGrid.Columns>
+        </DataGrid>
     </Grid>
 </Window>

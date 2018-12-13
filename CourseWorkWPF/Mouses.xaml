@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CourseWorkWPF"
         mc:Ignorable="d"
-        Title="Mouses" Height="450" Width="800" WindowStartupLocation="CenterScreen" Loaded="Window_Loaded">
+        Title="Mouses" Height="450" Width="800" WindowStartupLocation="CenterScreen" Loaded="Window_Loaded" Icon="ICON.ico">
     <Grid Background="Black">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="160"/>
