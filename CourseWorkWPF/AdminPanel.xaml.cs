@@ -52,21 +52,58 @@ namespace CourseWorkWPF
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            foreach (var item in users)
+            try
             {
-                if((Nonff.SelectedItem  as User).Login==item.Login)
-                {
-                    try
-                    {
-                        users.Remove(item);
-                        Helper.users.Remove(item);
-                        MessageBox.Show("Seccesfull");
-                    }
-                    catch
-                    {
+                Helper.users.RemoveAt(Nonff.SelectedIndex);
+                users.RemoveAt(Nonff.SelectedIndex);
+                Nonff.ItemsSource = users;
+                MessageBox.Show("Succesfull");
+                Text1.Text = "";
+                Text2.Text = "";
+                Text3.Text = "";
+            }
+            catch
+            {
 
-                    }
+            }
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                users[Nonff.SelectedIndex].IsBanned = true;
+                Nonff.ItemsSource = users;
+                MessageBox.Show("Succesfull");
+                Text1.Text = "";
+                Text2.Text = "";
+                Text3.Text = "";
+            }
+            catch
+            {
+
+            }
+        }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                if (Text1.Text != null && Text2.Text != null && Text3.Text != null)
+                {
+                    users[Nonff.SelectedIndex].Name= Text1.Text;
+                    users[Nonff.SelectedIndex].Login = Text2.Text;
+                    users[Nonff.SelectedIndex].Password = Text3.Text;
+                    Nonff.ItemsSource = users;
+                    MessageBox.Show("Succesfull");
+                    Text1.Text = "";
+                    Text2.Text = "";
+                    Text3.Text = "";
                 }
+            }
+            catch
+            {
+
             }
         }
     }

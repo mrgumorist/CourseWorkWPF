@@ -32,8 +32,8 @@
             <TextBox Name="Text3" Grid.Row="5" Margin="10" ></TextBox>
             <Button Grid.Row="6" Margin="5" Background="White" Foreground="Red" FontSize="20" FontWeight="Bold" Click="Create">Create</Button>
             <Button Grid.Row="7" Margin="5" Background="White" Foreground="Red" FontSize="20" FontWeight="Bold" Click="Button_Click">Delete</Button>
-            <Button Grid.Row="8" Margin="5" Background="White" Foreground="Red" FontSize="20" FontWeight="Bold">Change</Button>
-            <Button Grid.Row="9" Margin="5" Background="White" Foreground="Red" FontSize="20" FontWeight="Bold">Ban</Button>
+            <Button Grid.Row="8" Margin="5" Background="White" Foreground="Red" FontSize="20" FontWeight="Bold" Click="Button_Click_2">Change</Button>
+            <Button Grid.Row="9" Margin="5" Background="White" Foreground="Red" FontSize="20" FontWeight="Bold" Click="Button_Click_1">Ban</Button>
         </Grid>
         <DataGrid Grid.Column="1" Name="Nonff" AutoGenerateColumns="False" >
             <DataGrid.Columns>
