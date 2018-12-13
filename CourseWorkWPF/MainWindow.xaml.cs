@@ -41,12 +41,19 @@ namespace CourseWorkWPF
                                 
                             if(item.Range== "Deliver")
                             {
-
+                                Hide();
+                                DeliverMenu deliver = new DeliverMenu(item);
+                                deliver.ShowDialog();
+                                Show();
                             }
                             else if(item.Range == "Manager")
                             {
-
+                                Hide();
+                                Menejer menejer = new Menejer();
+                                menejer.ShowDialog();
+                                Show();
                             }
+                        
                             else if (item.Range == "Admin")
                             {
 

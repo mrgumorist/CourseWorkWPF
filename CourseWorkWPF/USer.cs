@@ -21,7 +21,8 @@ namespace CourseWorkWPF
         public bool IsAccepted { get; set; }
         public ObservableCollection<Product> productss = new ObservableCollection<Product>();
         public ObservableCollection<Product> productssDelivered = new ObservableCollection<Product>();
-        public  int DeliverStatus = 0;
+        public ObservableCollection<User> completedusers = new ObservableCollection<User>();
+        public int DeliverStatus { get; set; } = 0;
         public User()
         {
 

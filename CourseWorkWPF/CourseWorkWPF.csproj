@@ -69,6 +69,15 @@
     <Compile Include="Client.xaml.cs">
       <DependentUpon>Client.xaml</DependentUpon>
     </Compile>
+    <Compile Include="DeliverMenu.xaml.cs">
+      <DependentUpon>DeliverMenu.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="InfoAllManajer.xaml.cs">
+      <DependentUpon>InfoAllManajer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Menejer.xaml.cs">
+      <DependentUpon>Menejer.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Mouses.xaml.cs">
       <DependentUpon>Mouses.xaml</DependentUpon>
     </Compile>
@@ -98,6 +107,14 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="DeliverMenu.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="InfoAllManajer.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -111,6 +128,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Menejer.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Mouses.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
